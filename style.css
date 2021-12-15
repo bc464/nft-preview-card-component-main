@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+.container {
+  width: 350px;
+  margin: 50px auto 1px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 10px;
+}
+.hero-img {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+.main-img {
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+}
+.hero-img:hover .overlay {
+  opacity: 0.5;
+}
+
+.icon {
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.main-heading {
+  color: hsl(0, 0%, 100%);
+  padding-top: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.main-heading:hover {
+  color: hsl(178, 100%, 50%);
+}
+.main-text {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.secondary-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.eth,
+.days-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eth-text {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 16px;
+}
+.days-left-text {
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+  font-weight: 300;
+}
+.hr-line {
+  color: hsl(215, 32%, 27%);
+  margin-bottom: 20px;
+}
+.created-by {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+.created-by-text {
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+  font-weight: 500;
+}
+.created-by-name {
+  padding-left: 5px;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  cursor: pointer;
+}
+.created-by-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
